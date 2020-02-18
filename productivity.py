@@ -1,0 +1,33 @@
+import dash_core_components as dcc
+
+# https://plot.ly/python/line-charts/
+
+
+def graph():
+    return [
+        dcc.Graph(
+            figure={
+                'data': [
+                    {'type': 'line',
+                     'x': ['9am', '12pm', '3pm', '5pm', '9pm', '11pm'],
+                     'y': [5, 2, 7, 1, 9, 2]
+                     }
+                ],
+                'layout': {
+                    'title': {
+                        'text': 'Productivity'
+                    },
+                    'xaxis': {
+                        'title': {
+                            'text': 'time of day'
+                        }
+                    },
+                    'yaxis': {
+                        'title': {
+                            'text': 'completed tasks'
+                        }
+                    },
+                }
+            }
+        )
+    ]
