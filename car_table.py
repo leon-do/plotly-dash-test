@@ -1,12 +1,10 @@
 import dash_table
-import pandas as pd
 
-# https://dash.plot.ly/datatable/interactivity
+# https://dash.plot.ly/datatable
 
 
 def graph():
     return dash_table.DataTable(
-        id='table',
         columns=[
             {'name': 'car', 'id': 'car'},
             {'name': 'model', 'id': 'model'}
@@ -17,5 +15,4 @@ def graph():
             {'car': 'tesla', 'model': '3'}
         ],
         sort_action="native",
-
     )
