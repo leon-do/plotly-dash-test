@@ -7,3 +7,5 @@
 `$ cd plotly-dash-test`
 
 `$ python app.py`
+
+![](https://imgur.com/Tayn1tm.png)
