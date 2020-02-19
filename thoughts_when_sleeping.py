@@ -3,7 +3,7 @@ import dash_core_components as dcc
 # https://plot.ly/python/v3/pie-charts/
 
 
-def graph():
+def layout():
     return [
         dcc.Graph(
             figure={

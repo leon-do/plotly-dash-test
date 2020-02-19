@@ -12,7 +12,7 @@ def getData():
     ]
 
 
-def graph():
+def layout():
     data = getData()
     return dash_table.DataTable(
         columns=[{'name': i, 'id': i} for i in data[0].keys()],

@@ -4,7 +4,7 @@ import dash_core_components as dcc
 # https://plot.ly/javascript/figure-labels/
 
 
-def graph():
+def layout():
     return [
         dcc.Graph(
             figure={

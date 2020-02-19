@@ -3,7 +3,7 @@ import dash_table
 # https://dash.plot.ly/datatable
 
 
-def graph():
+def layout():
     return dash_table.DataTable(
         columns=[
             {'name': 'car', 'id': 'car'},
