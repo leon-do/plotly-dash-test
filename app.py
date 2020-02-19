@@ -5,10 +5,8 @@ import bank_account, thoughts_when_sleeping, productivity, car_table, person_tab
 # https://github.com/plotly/dash-oil-and-gas-demo/blob/master/app.py
 
 
-# init app with css
-external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
-
-app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
+# init app and loads ./assets/style.css
+app = dash.Dash(__name__ )
 
 # put on screen
 app.layout = html.Div([
@@ -24,9 +22,10 @@ app.layout = html.Div([
     html.Div([
         html.Div(car_table.graph(), className="three columns"),
         html.Div(person_table.graph(), className="three columns")
-    ], className='row')
+    ], className='row'),
+
 ])
 
 # $ python app.py
 if __name__ == "__main__":
-    app.run_server(debug=True)
+    app.run_server()
