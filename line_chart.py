@@ -1,7 +1,6 @@
 import dash_core_components as dcc
 
-# https://plot.ly/python/
-# https://plot.ly/javascript/figure-labels/
+# https://plot.ly/python/line-charts/
 
 
 def layout():
@@ -9,23 +8,23 @@ def layout():
         dcc.Graph(
             figure={
                 'data': [
-                    {'type': 'bar',
-                     'x': ['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday'],
-                     'y': [20, 15, 12, 10, 18, 4, 1]
+                    {'type': 'line',
+                     'x': ['9am', '12pm', '3pm', '5pm', '9pm', '11pm'],
+                     'y': [5, 2, 7, 1, 9, 2]
                      }
                 ],
                 'layout': {
                     'title': {
-                        'text': 'Bank Account'
+                        'text': 'lineChartTitle'
                     },
                     'xaxis': {
                         'title': {
-                            'text': 'day of the week'
+                            'text': 'lineChartXaxis'
                         }
                     },
                     'yaxis': {
                         'title': {
-                            'text': 'dollars'
+                            'text': 'lineChartYaxis'
                         }
                     },
                 }

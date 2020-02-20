@@ -10,13 +10,13 @@ def layout():
                 'data': [{
                     'type': 'pie',
                     'hole': 0.4,
-                    'labels': ["I'm sleepy", "This sucks", "Why"],
+                    'labels': ['label0', 'label1', 'label2'],
                     'values': [20, 30, 50]
                 }
                 ],
                 'layout': {
                     'title': {
-                        'text': 'Thoughts When Sleeping'
+                        'text': 'pieChartTitle'
                     }
                 }
             }
