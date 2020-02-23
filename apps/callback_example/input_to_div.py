@@ -8,7 +8,7 @@ from dash.dependencies import Input, Output
 
 def layout():
     return html.Div([
-        dcc.Input(id='my-input', placeholder='type here', type='text'),
+        dcc.Input(id='my-input', placeholder='my-input here', type='text'),
         html.Div(id='my-div')
     ])
 

@@ -14,7 +14,7 @@ def layout():
         dcc.Location(id='url', refresh=False),
         html.H4('sidebar'),
         html.Div(dcc.Link('graph examples', href='/graph_examples')),
-        html.Div(dcc.Link('grid layout', href='/rows_columns')),
+        html.Div(dcc.Link('rows columns', href='/rows_columns')),
         html.Div(dcc.Link('callback example', href='/callback_example')),
         html.Div(id='page-content')
     ])

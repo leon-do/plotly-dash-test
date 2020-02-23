@@ -4,7 +4,7 @@ from apps.rows_columns import red_box, green_box
 
 def layout():
     return html.Div([
-        html.H4('Use className="row" to make a new row and className="six columns" for 2 columns. Max 12 columns/row'),
+        html.H4('Use className="row" and className="six columns". Max 12 columns/row'),
 
         html.Div([
             html.Div(red_box.layout())
