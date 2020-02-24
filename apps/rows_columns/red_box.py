@@ -6,8 +6,8 @@ def layout():
         html.Div(
             '🍎',
             style={
-                'background-color': '#ff928b',
-                'text-align': 'center'
+                'backgroundColor': '#ff928b',
+                'textAlign': 'center'
             }
         )
     ])
