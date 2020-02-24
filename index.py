@@ -9,12 +9,12 @@ from apps.rows_columns import rows_columns
 from apps.callback_example import callback_example
 
 app.layout = html.Div([
-	html.Div(navbar.layout()),
+    html.Div(navbar.layout()),
     html.Div(sidebar.layout()),
     html.Div(id='page-content', className='container')
 ])
 
-
+# input from sidebar.py
 @app.callback(Output('page-content', 'children'), [Input('url', 'pathname')])
 def display_page(pathname):
     if pathname == '/':
