@@ -6,6 +6,7 @@ from apps.header import header
 from apps.navbar import navbar
 from apps.footer import footer
 from apps.graph_examples import graph_examples
+from apps.table_examples import table_examples
 from apps.rows_columns import rows_columns
 from apps.callback_example import callback_example
 
@@ -13,7 +14,7 @@ app.layout = html.Div([
     html.Header(header.layout()),
     html.Nav(navbar.layout()),
     html.Main(id='page-content'),
-	html.Footer(footer.layout())
+    html.Footer(footer.layout())
 ], className='container')
 
 # input from sidebar.py
@@ -23,6 +24,8 @@ def display_page(pathname):
         return graph_examples.layout()
     elif pathname == '/graph_examples':
         return graph_examples.layout()
+    elif pathname == '/table_examples':
+        return table_examples.layout()
     elif pathname == '/rows_columns':
         return rows_columns.layout()
     elif pathname == '/callback_example':
