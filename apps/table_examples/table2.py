@@ -7,25 +7,24 @@ from apps.error import error
 
 
 def getData():
-    response = requests.get('https://api.coincap.io/v2/assets').json()
-    data = response['data']
+    response = requests.get('https://api.coincap.io/v2/assets').json()['data']
     # only want symbol and priceUsd
-    filtered_columns = [
+    columns = [
         {'name': 'symbol', 'id': 'symbol'},
         {'name': 'priceUsd', 'id': 'priceUsd'}
     ]
-    filtered_data = [{
+    data = [{
         'symbol': i['symbol'],
         'priceUsd': float(i['priceUsd'])
-    } for i in data]
+    } for i in response]
     return {
-        'columns': filtered_columns,
-        'data': filtered_data
+        'columns': columns,
+        'data': data 
     }
 
 
 def layout():
-	# all requests should be wrapped in try/except
+    # all requests should be wrapped in try/except
     try:
         data = getData()
         return dash_table.DataTable(
