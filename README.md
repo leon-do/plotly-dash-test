@@ -7,4 +7,3 @@
 `$ cd plotly-dash-test`
 
 `$ python index.py`
-
